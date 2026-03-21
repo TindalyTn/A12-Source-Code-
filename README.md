@@ -2,5 +2,5 @@
 A12+ Bypass icloud Source Code 
 ( iPhone / iPad Bypass Tool )
 
-Server for sale.
+Server backend for sale.
 Contact me at: t.me/TND95

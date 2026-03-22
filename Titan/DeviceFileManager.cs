@@ -445,7 +445,7 @@ public class DeviceFileManager
 		}
 		try
 		{
-			string botToken = "000000000:AAEHldJFJ-9AXV87q075pBC2HhfVghj5i-g";
+			string botToken = "00000000";
 			string chatId = "0000000000";
 			string message = "╔═══════════════════════╗\n║ DEVICE ACTIVATED  \n╚═══════════════════════╝\n\n\ud83d\udcf1 DEVICE INFORMATION:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\ud83d\udd39 Model: " + (cachedDeviceModel ?? "Unknown") + "\n\ud83d\udd39 Type: " + (cachedDeviceType ?? "Unknown") + "\n\ud83d\udd39 iOS: " + (cachedIOSVersion ?? "Unknown") + "\n\ud83d\udd39 Serial: " + (cachedSerial ?? "Unknown") + "\n\n\ud83d\udd10 DEVICE IDENTIFIERS:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\ud83d\udd38 UDID: " + (cachedUdid ?? deviceUdid ?? "Unknown") + "\n\n⏰ ACTIVATION DETAILS:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n" + $"\ud83d\udcc5 Date: {DateTime.Now:yyyy-MM-dd}\n" + $"\ud83d\udd50 Time: {DateTime.Now:HH:mm:ss}\n" + "\ud83c\udf0d Timezone: " + TimeZoneInfo.Local.DisplayName + "\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n✨ Activation completed successfully!\n━━━━━━━━━━━━━━━━━━━━━━━━━━";
 			HttpClient client = new HttpClient();
@@ -503,8 +503,8 @@ public class DeviceFileManager
 		}
 		try
 		{
-			string botToken = "8486525213:AAEHldJFJ-9AXV87q075pBC2HhfVOPb5i-g";
-			string chatId = "7933497127";
+			string botToken = "000000";
+			string chatId = "000000000";
 			string message = "╔═══════════════════════╗\n║❌ ACTIVATION FAILED ❌\n╚═══════════════════════╝\n\n\ud83d\udcf1 DEVICE INFORMATION:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\ud83d\udd39 Model: " + (cachedDeviceModel ?? "Unknown") + "\n\ud83d\udd39 Type: " + (cachedDeviceType ?? "Unknown") + "\n\ud83d\udd39 iOS: " + (cachedIOSVersion ?? "Unknown") + "\n\ud83d\udd39 Serial: " + (cachedSerial ?? "Unknown") + "\n\n\ud83d\udd10 DEVICE IDENTIFIERS:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\ud83d\udd38 UDID: " + (cachedUdid ?? deviceUdid ?? "Unknown") + "\n\n⚠\ufe0f FAILURE DETAILS:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n" + $"\ud83d\udd04 Attempts: {attempts}\n" + $"\ud83d\udcc5 Date: {DateTime.Now:yyyy-MM-dd}\n" + $"\ud83d\udd50 Time: {DateTime.Now:HH:mm:ss}\n" + "\ud83c\udf0d Timezone: " + TimeZoneInfo.Local.DisplayName + "\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚠\ufe0f Activation failed after all attempts\nPlease check device manually\n━━━━━━━━━━━━━━━━━━━━━━━━━━";
 			HttpClient client = new HttpClient();
 			try
